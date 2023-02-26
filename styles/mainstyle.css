@@ -1,0 +1,110 @@
+
+html, body {
+    padding: 0; margin: 0;
+    background-color: #ccc8c8;
+    font-family: "Verdana", sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    padding: 5%;
+    text-align: center;
+    background-color: black;
+}
+
+main {
+    padding: 5%;
+}
+
+#mainLink {
+    font-size: 2em;
+    color: white;
+}
+
+#mainLink:hover {
+    text-decoration: none;
+}
+
+#emojiContainer h2 {
+    text-align: center;
+}
+
+#emojiGrid {
+    display: flex;
+    flex-direction: column;
+}
+
+.emojiItem {
+    display: flex;
+    flex-direction: row;
+}
+
+.emojiItem:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.emojiDescription {
+    display: block;
+    background-color: #9c359c;
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    width: 400px;
+    height: 400px;
+}
+
+.anEmoji {
+    background-color: white;
+    display: block;
+    height: 400px;
+    width: 400px;
+    padding: 2%;
+    background-size: cover;
+}
+
+.anEmoji:hover {
+    animation-name: bgStretch;
+    animation-duration: 2s;
+}
+
+#imgEmoji1 {
+    background-image: url("/images/custom_emojis/smile.png");
+}
+
+#imgEmoji2 {
+    background-image: url("/images/custom_emojis/sad.png");
+}
+
+#imgEmoji3 {
+    background-image: url("/images/custom_emojis/angry.png");
+}
+
+#imgEmoji4 {
+    background-image: url("/images/custom_emojis/vhappy.png");
+}
+
+
+@keyframes bgStretch {
+
+    0% {
+        background-size: 400px 400px
+    }
+
+    50% {
+        background-size: 800px 800px
+    }
+
+    100% {
+        background-size: 400px 400px
+    }
+
+}
+
+footer {
+    padding: 2%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-top: 5%;
+}
